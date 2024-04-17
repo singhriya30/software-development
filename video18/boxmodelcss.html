@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aquamarine;
+        }
+
+        .box1 {
+            color: yellowgreen;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blueviolet;
+            height: 50px;
+            box-sizing: border-box;
+            /* iske likhne pe hmlg jo height 200 diye hai wo padding border or actual height mila ke total 200 dega... nhi dalenge ye to total height 200+ unsb ko mila ke de dega*/
+        }
+
+        .box2 {
+            color: darkorange;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+
+
+</body>
+
+</html>
+
+
+
+
+<!-- margin collapse ka concept kehta hai ki agar 2 box ki margin collapse kr rhi hai to dono me se jiski margin bdi hogi whi margin lg jayegi -->

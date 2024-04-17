@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .box{
+            border: 2px solid blue;
+            display: inline-block;   /*inline lgne ke bdd div jo pura line le rha tha wo ab jitna sentence hai utne tk hi space lega.. inline block lgane se upr se jo border nhi aa rha tha aa jyga.. sirf inline property lgane se width kam nhi krta width use krne ke liye hmlh ko inline block lgana pdta hai*/
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">I am a box</div>
+    <div class="box">and also a nice box</div>
+    <span>I am a good</span>
+    <span>boy</span>
+
+</body>
+
+</html>
+
+<!-- div me agar 2 line alg alg likhe to ek ke neeche ek aata hai kyunki wo block element hai whi agr span me 2 line likhe toh dono sth me aata hai kyunki ye inline element hai.. agar hm chahte hai ki div as a inline kam kre to uska diplay property css me jake inline kr denge -->
+
+
+<!-- kisi element display agar none kr de to jo space hai aur jo box hai wo dono htt jyga lekin agar visibility hidden krte hai to  bss box gyb hota hai uska space waise hi rhta hai -->

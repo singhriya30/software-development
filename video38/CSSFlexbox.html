@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - CSS</title>
+    <style>
+        .container{
+            border: 2px solid pink;
+            height: 80vh;
+            display: flex;
+            /* justify-content: center; 
+            
+            ye main axis ke direction me item ko centre krega.. phle ye flex direction dekhega phir uske according main axis jidhr hoga udhr item ko centre krega.. agar flex direction row hoga to ye horizontally centre krega */
+
+
+            align-items: center; 
+            
+            /*  isse vertically items ko centre krega.. iska jitna bhi properties hai container pe lgaya jata hai individual items pe nhi */
+
+            /* flex-direction: column; */
+
+            flex-direction: row;
+
+            flex-wrap: wrap;  
+            
+            /*abhi jo overflow ho rha tha items bdhne pe ab wo wrap ho jyga.. or neeche adjust hone lgega*/
+
+            /* flex-flow: row wrap;   flex flow me hmlg flex direction or flex wrap ek sth dal skte hai.. uske syntax me hi aisa hai  */
+
+            /* align-content: center;  
+            
+            sirf ek line rha to align items ka use krenge lekin agr row ek se jyada ho jyga to align content ka use krenge centre krne ke liye*/
+
+           /* gap: 30px;
+           row-gap: 40px; 
+           column-gap: 10px;
+
+           gap: 40px 10px;  sth me likh skte hai gap ke andr phle row phir column
+            */
+
+        }
+
+        .item{
+            flex-grow: 1;  /* default 0  isko lgane se sare items equal jgh lenge*/
+            border: 1px solid black;
+            width: 92px;
+            height: 92px;
+            margin: 4px;
+            background-color: blueviolet;
+           
+
+        }
+
+        .item1{
+            /* flex-grow: 2; */
+
+
+            /* flex-shrink: 2;  ye krne se jis item pe lgayenge or jb hmlg ka display size chota hote jayega jis item pe ye lga hoga wo item shrink hote jayega mtlb gy hote jayegaa */
+
+            align-self:flex-end ;  /* isse wo item sirf khud ko value ke according idhr udhr krega */
+        }
+
+        /* .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order:3
+        }
+        .order-27{
+            order: 27;
+        } */
+
+    </style>
+</head>
+<body>
+    <main>
+       <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+       </div>
+    </main>
+    
+</body>
+</html>

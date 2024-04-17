@@ -1,0 +1,33 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property - CSS</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 3px solid black;
+            overflow: auto;
+            /*agar scroll jgh overflow auto kr denge to agar overflow ho rha hoga to scroller lga dega or jrurat nhi hoga to jaise height width hai reh jyga*/
+           /* white-space: nowrap;     ye krne se sirf horizontal bar kam krta hai */
+           overflow-x: hidden;  /*horizontally scroller hta dega*/
+           overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good girl and i love write Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quisquam rem?
+        Quos perferendis ducimus nihil eveniet, laudantium, fuga exercitationem nam illum non dolorum nulla aperiam iste
+        sit assumenda tenetur quo. Possimus consequuntur exercitationem, doloremque at pariatur iure dolores neque in
+        accusamus praesentium ad consectetur veritatis?
+
+    </div>
+
+</body>
+
+</html>

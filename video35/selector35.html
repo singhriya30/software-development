@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - More on Selectors</title>
+    <style>
+
+        .boxes *{
+            color: brown;
+            border: 1px solid pink;
+        
+
+        }
+    .box:first-child{
+        background-color: beige;
+    }
+
+    p, a, .box, [data-color="primary"]{
+        padding-top: 45px;
+
+    }
+
+    .boxes::before{
+       content: "Riya is Good";
+       color: rgb(22, 115, 201);
+       /* border: 1px solid rgb(156, 48, 8);
+       padding-top: 45px; */
+    }
+
+    .boxes::after{
+        content: "Sigma Course is also Good";
+        color: cadetblue;
+    }
+
+    ::selection{  /* ye krne se jb bhi hmlg text select krenge colour blueviolet or background black hote jayega*/
+        color: blueviolet;
+        background-color: black;
+    }
+
+    .box::first-letter{
+        color: rgb(59, 247, 12);
+        font-size: 25px;
+    }
+
+    input::placeholder{
+        color: chocolate;
+    }
+
+    </style>
+</head>
+<body>
+<div class="boxes">
+    <div data-color="primary" class="box">Hey I am a box</div>
+    <div class="box">Hey I am a box</div>
+    <div class="box">Hey I am a box</div>
+    <input type="text" placeholder="Enter your name here">
+</div>
+    
+</body>
+</html>

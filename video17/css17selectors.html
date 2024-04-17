@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        /* div{
+           background-color: brown;
+        } */
+
+        /* class selector */
+        .brown {
+            background-color: brown;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector */
+        /* div>p {                           direct child hona chahiye islye nhi hua to ab use krenge aage ka selector
+            background-color: chocolate;
+        } */
+
+        /* descendent selector
+        div p{
+            background-color: aqua;
+        } */
+
+        /* universal selector    isse sara lines chipk gya hai */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: rgb(235, 205, 75);
+
+        }
+
+        a:link {
+            /* agar koi site visit nhi hua hoga to yeh colour dikhayega */
+            color: rgb(247, 11, 58);
+        }
+
+        a:active {
+            /*active mtlb jb aap click kr rhe ho tb*/
+            background-color: rgb(97, 228, 10)
+        }
+
+        a:hover {
+            background-color: lightslategrey;
+        }
+
+        p:first-child {background-color: rgb(219, 13, 175);   /* jha jha p apne parent ka first child hoga wha wha ye color lg jyga*/
+        }
+
+        /* attribute selector */
+        [data-x=a]{         
+            background-color: rgb(241, 22, 22);
+        }
+            
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div class="brown">
+        I am a Div
+        <article>
+            <p>I am a para inside Div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am another Div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.instagram3.com">Go to Instagram</a>
+    
+    <div data-x=a>
+        I am also another div
+    </div>
+
+</body>
+
+</html>

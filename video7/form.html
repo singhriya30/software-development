@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form - Let's Learn it</title>
+</head>
+
+<body>
+    <h2> Form to apply for sigma web development course</h2>
+    <form action="post">
+        <fieldset>
+            <legend>HTML FORM</legend>
+
+            <div>
+
+                <label for="username"> Username : </label>
+                <input type="text" id="username" placeholder="username">
+            </div>
+            <div>
+
+
+                <label for="password">Password :</label>
+                <input type="password" id="password" placeholder="password">
+            </div>
+            <div>
+                Gender:
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <div>
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" id="cricket" name="hobbies" value="cricket">
+                <label for="tennis">Tennis</label>
+                <input type="checkbox" id="Tennis" name="hobbies" value="Tennis">
+                <label for="badminton">Badminton</label>
+                <input type="checkbox" id="badminton" name="hobbies" value="badminton">
+            </div>
+            <div>
+                <label for="comment">Enter your comment here: </label>
+                </br>
+                <textarea name="comment" id="comment" cols="30" rows="4"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div>
+                <select name="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="mango">Mango</option>
+                </select>
+            </div>
+            <div>
+                <label for="submit">Submit</label>
+                <input type="button" value="Submit" id="submit">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

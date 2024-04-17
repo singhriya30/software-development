@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query - CSS</title>
+    <style>
+        body{
+            background-color: red;
+        }
+
+        @media screen and (orientation : landscape) {
+            body{
+             border: 2px solid purple;
+            }
+            
+        }
+        
+        @media only screen and (max-width : 455px){    /* Max width 455px diye hai to jbtk screen 455px se bda hai burlywood colour apply hoga lekin jaise screen width 455px se kam hoga aquamarine as a background color lg jayega.. media query ka use hmlg responsiveness ke liye krte hai mtlb jo website hmlg ke laptop pe dhng se dikh rha wo phone pe bhi usi ache pattern me dikhe iske liye*/
+            body{
+                background-color: blue;
+            }
+           .boxes{
+            flex-direction: column;
+           }
+        }
+
+        /* @media not|only mediatype and (expression) {
+            CSS-Code;  .. syntax of media query */
+
+
+            .boxes{
+                display: flex;
+               }
+
+            .box
+        {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am a burlywood body guy.
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    
+</body>
+</html>

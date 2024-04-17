@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties - Font, Text, </title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            text-align: center;
+
+        }
+
+        p {
+            font-family: monospace;
+            font-style: oblique;
+            font-weight: bolder;
+            font-size: 25px;
+            line-height: 3;    /* lines ke beech me gap lata hai */
+            letter-spacing: 5px;
+        }
+
+        h2{
+            /* text-transform: capitalize;  words ke first letter ko bda kr deta hai */
+            text-transform:uppercase;
+            text-decoration:line-through;
+            text-decoration-color: chartreuse;
+            text-decoration-style:dotted;
+            text-decoration-thickness: px ;  /* iske pixels ko increase krne se dotted jo hai wo px ke according bda ho jyga*/
+            text-indent: 40px ; /*aage indent chhod deta hai*/
+            text-align: center;
+        }
+        
+        .lorem{
+            border: 2px solid yellowgreen;
+            width: 145px;
+            word-break: keep-all; /* keep all krne se ek line me ek word pure tareke se diya rhega agar break all krte to sara word jo line ke last me aaata hoga usko kat kat ke neeche krte dega*/
+            text-overflow: ellipsis; /*isse 2 3 letter ke bdd dot dot me aata hai.. agr iske jgh clip use krte to word jitna adjust hota usko rkhta baki delete */
+            overflow: hidden;   /*isse jo overflow ho rha tha usko utne hi width me hide kr dega*/
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about Fonts</h2>
+        <p>This is a video on Fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id blanditiis rerum ullam dolore repellat eius
+            perferendis illo magnam similique quineque, eligendi inventore tempore accusamus, aut laboriosam! Eum
+            corporis facere tempora quam laborum sit at consequuntur, inventore consectetur distinctio, qui deserunt.
+            Ut, voluptas recusandae!</p>
+    </div>
+
+
+
+</body>
+
+</html>

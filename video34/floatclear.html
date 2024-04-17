@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear - CSS</title>
+    <style>
+        img{
+            float: right;   /*to ye right ki trf float krega aur allow krega apne left pe content likhna*/
+        }
+
+        .cards{
+            border: 2px solid rgb(102, 7, 165);
+            display: flow-root;   /*aise krnese jo image overflow kr rha tha wo nhi krega ab.. adjust ho jyga*/
+        }
+
+        .card{
+            border: 1px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: cyan;
+            clear :right;   /*isko jaise apne right me koi element nhi chahiye to ye clear ka use krega*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="natural.png" alt="Girl image" width="230px">
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi aliquam optio quam tempore temporibus vitae officia impedit! Numquam ipsa ea, itaque reiciendis quo laboriosam tempora, cupiditate, nihil qui aspernatur sunt minima dolore sapiente nulla.
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maiores debitis dolore consectetur ratione harum eos error quibusdam laudantium! Officia labore odit id neque sunt consectetur incidunt optio veniam deserunt officiis et ducimus culpa ad enim, eligendi, accusamus eaque. Perspiciatis nobis suscipit nesciunt ab? Molestias neque ratione dolores deserunt blanditiis impedit aspernatur labore quibusdam voluptas laudantium voluptatem, necessitatibus voluptates amet atque. Illo in ab explicabo quam itaque voluptatibus officiis suscipit, odit atque eligendi pariatur iure, quisquam porro animi nobis, voluptatem sapiente quidem beatae esse dignissimos repellat. Veritatis sint dolorum nam amet assumenda corporis voluptates qui aliquid doloremque ratione praesentium accusantium a molestiae nostrum sit excepturi, cum quas expedita provident delectus blanditiis labore! Tenetur unde repellendus at voluptate ab odio. Laudantium impedit obcaecati accusamus nobis est officiis vel fuga accusantium, beatae nemo magnam unde, nulla sapiente eius suscipit deserunt sunt? Minus, culpa. Sequi numquam, unde cumque facilis illum maiores rerum accusantium veritatis, perspiciatis totam suscipit voluptatibus aliquam assumenda consequuntur eaque consequatur omnis animi, laborum quia quas libero provident reiciendis tempore! Pariatur perferendis assumenda, neque ad odio eos eaque aut eum nesciunt at laboriosam reiciendis aspernatur nobis ex, rerum ab omnis totam beatae autem voluptate repudiandae quod modi eveniet fugit? Optio corporis provident fuga illum perferendis rerum eos dolore, porro enim maiores! Eos accusamus adipisci id voluptate temporibus, labore expedita laborum ratione illo? Natus explicabo magni asperiores suscipit voluptas nihil officia inventore aspernatur! Sint ab similique suscipit. Iusto, perferendis aliquid? Cumque laudantium sint dolorem nam labore recusandae deleniti incidunt culpa eius ex, ad magni quia! Hic minima ducimus deserunt, odio sapiente ipsa exercitationem recusandae quibusdam eligendi ullam magni enim maxime porro eius omnis, quod repudiandae ab, quos corrupti numquam veritatis? Adipisci laborum corrupti pariatur dolor perferendis. Exercitationem obcaecati ut praesentium accusantium animi illum dignissimos fuga iste consequatur? Nam alias accusantium quibusdam laborum tempore sint odit totam ab eaque nobis! Velit veniam illo tempora eveniet in, quos dolorum illum. Quos blanditiis aut pariatur odit delectus labore consequuntur quaerat iste eaque. Velit assumenda exercitationem recusandae amet dolorum!</div>
+        <div class="card">Card3</div>
+    </div>
+    
+</body>
+</html>

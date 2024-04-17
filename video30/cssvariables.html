@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            /*global variable*/
+            --color: rgb(162, 187, 21);
+            --seccolor: rgb(214, 219, 145);
+            --defpad: 23px;    /*default padding*/
+            --defop: 0.2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor)
+        }
+
+        ul {
+            display: flex;
+        }
+            
+
+
+        ul li:first-child {
+            --color: rgb(218, 128, 68);
+            /*local variable*/
+            background-color: var(--color);
+            /* background-color: var(--color, purple);  maan lo agar color naam ka koi variable hua hi nhi to comma deke hmlg koi bhi color de skte hai agar color naam ka koi variable nhi hua to comma deke jo color likhnge wo set ho jyga   */
+            
+        }
+
+        ul li {
+            opacity: var(--defop);
+            padding: var(--defpad);
+            list-style-type: none;
+            padding: 23px;
+            border: 2px solid var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure inventore obcaecati corrupti, rerum
+        voluptates impedit molestiae perferendis in architecto ab necessitatibus odit provident quos molestias, et
+        repellat velit repudiandae nihil sint reprehenderit culpa dolore. Voluptatem doloremque at maiores repudiandae
+        porro quaerat, recusandae facere veniam!
+    </div>
+
+</body>
+
+</html>

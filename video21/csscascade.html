@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specifity</title>
+    <style>
+        /* the specifity of this is 1 */
+        h1 {
+            background-color: aqua;
+        }
+
+        /* the specifity of this is 1+10=11  ..yellow ho jyga kyunki ab iska specifity bdh gya hai */
+        h1.yellow {
+            background-color: yellow;
+        }
+
+        /* the specifity of this is 10 */
+        .cred {
+            background-color: red ;
+        }
+
+        /* the specifity of this is 10 */
+        .cpurple {
+            background-color: purple;
+        }
+
+        /* The Specifityof this is 1+10+10+10+10= 41.. element+class+class+attribute+pseudo selector This was question from sigma sir */
+        a.harryclass.rohan-class[href]:hover{
+            color:blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple"> CSS Specifity </h1>
+        <!-- ek hi line pe 4 property lga diye to kon sa kam krega usi se related hai css specifity  -->
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!-- agr sara selector same type ka hoga to sbse phle position dekhnge jo style tag ke andr sbse neeche likha hoga usko priority denge phir agar selectors alg alg hoga to specifity dekhnge prioritywise..specifity priority: inline>id selector>class or attribute selector> element selector> universal selector.. ek hota hai origin jo browser side se hi style lgta hai sbse main important agar hm kisi style me !important lga diye hai to wo lagu ho jyga -->

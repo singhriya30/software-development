@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Unit</title>
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px;         1px=196inch */
+            width: 80vw;
+            /* vw=viewport width..*/
+            height: 10vh;
+            margin: auto;
+            /* isse left right dono me margin automatically lg jyga.. ye block element hai islye centre ho gya inline element centre nhi hoga*/
+
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px;         1px=196inch */
+            width: 80vw;
+            /* vw=viewport width.. important unit*/
+            min-height: 80vh;   /*isse hmlg jitna likhenge utna height bdhte jygaaa */
+            margin: 23px auto;
+            /* isse left right dono me margin automatically lg jyga.. ye block element hai islye centre ho gya inline element centre nhi hoga*/
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container > div {
+            font-size: 1em;
+            /* isse jo font size 18 px diye hai uska doguna ho jyga.. agar upr se 18px hta de to 16 ka doguna ho jyga kyunki 16 default font size hai */
+            /* font-size: 2rem;  to ye paragraph ka font size 24 kr dega kyunki r mtlb root or root hmlg ka html hai uska jitna hoga uska doguna kr dega.. lekin agar container me font size likha hai to wo html ka na consider krke apne container me likha font size ka doguna krega */
+            width: 50%;   /*parent ke width ka 50% ho jyga*/
+            border: 2px solid red;
+
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width:50%   /*to ye paragraph ke width ka 50% ho jyga*/
+        }
+
+        .mycont {
+            font-size: 22px;
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;
+            color: blue;
+            /* width: 100vmin; */
+            width: 80vw;
+            /*vmin mtlb height iss device ke liye vmax mtlb width.. phone me vmin ho jyga width or vmax ho jyga height.. is device ke liye vmin ko vh bhi keh skte hai*/
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo explicabo magni possimus, fugit provident sapiente aliquid, sint laudantium, voluptatum quidem commodi tempora ullam neque? Molestias laboriosam vero laudantium, voluptatem excepturi laborum reprehenderit consectetur. Voluptatibus sit libero quas ut perferendis enim tempore eveniet ab consequatur fuga dignissimos quisquam nobis, esse quidem corporis aut doloribus reprehenderit ipsam sunt asperiores a ratione? Voluptas, laborum. Atque omnis nostrum voluptatum laudantium exercitationem, sequi autem quibusdam corporis obcaecati sed necessitatibus.
+
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo rerum delectus tempore doloremque esse sequi velit tenetur quis sapiente. Quod, at vitae?</div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, porro aut impedit doloribus pariatur quibusdam recusandae. Tenetur, quas corporis, doloribus eos molestiae atque enim a porro velit deserunt architecto in culpa quisquam. Impedit id quae ducimus. Eos necessitatibus corporis facilis autem recusandae pariatur, excepturi, vero corrupti sapiente tenetur tempora totam consequatur voluptas eveniet quisquam. Accusamus natus at suscipit laborum? Beatae corporis corrupti quos laborum quaerat rem perspiciatis, porro eaque repudiandae at consequatur ipsum animi eos quisquam inventore, iste ullam odit deleniti totam praesentium? Saepe, dolorum. Aliquid a harum nulla quidem accusamus laboriosam, ratione nesciunt tempore consectetur aut. Voluptatem voluptatibus libero, soluta quidem vel fugit doloremque corporis at fugiat atque, blanditiis debitis repudiandae tempora quam? Ipsa accusantium velit molestias veritatis animi? Architecto error aut dolorum expedita, nihil quas possimus. Dicta facilis, temporibus earum recusandae dignissimos odit consequuntur aperiam at et excepturi minus dolor obcaecati quod accusantium, explicabo non saepe voluptatum perspiciatis, quia amet. Expedita temporibus dicta mollitia magnam illo ad facilis nisi rem quam. Quo fugit eius, non officia quos, quam adipisci quas eos eligendi, velit provident vel sunt sequi placeat est laudantium quibusdam. Nemo quisquam repudiandae placeat reprehenderit aspernatur quaerat. ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis harum nostrum assumenda reprehenderit eos. At unde hic ut laborum facilis enim quo illo eaque dolore iste, nisi sequi maxime qui fugiat inventore necessitatibus ad eveniet doloremque fuga commodi. Exercitationem, rem sit sequi quasi aliquid dolorem consectetur commodi earum, dignissimos harum repudiandae pariatur quia, molestiae quibusdam doloremque fugit veniam et cumque. Molestias totam a dicta, vitae, cumque saepe odio qui fuga provident, fugiat obcaecati quo! Doloribus ipsa voluptas deleniti rem, ad corrupti in saepe, quis assumenda doloremque voluptatibus cumque itaque voluptate. Repudiandae, illo. Esse et placeat, quo, obcaecati aliquam nisi repellat nemo odit nulla explicabo sequi rerum, repudiandae voluptate provident earum! Similique exercitationem possimus aperiam voluptatibus nisi, praesentium enim quisquam deleniti debitis odit commodi, porro itaque aspernatur esse aliquam veritatis impedit? Quisquam numquam aspernatur eaque. Quidem veritatis, dicta, facere eos vitae id at molestias quam maxime blanditiis architecto amet necessitatibus voluptates voluptatem nulla fugit totam fuga voluptatum deserunt eius accusantium ipsum culpa repellendus odit. Quibusdam aliquam et ratione adipisci repellat cum maiores nostrum porro accusantium excepturi, consequatur inventore eligendi dolorem corrupti suscipit perspiciatis debitis ipsa explicabo accusamus molestias. Doloribus unde sunt repudiandae cumque eos odio quod et provident qui veniam neque consequatur aspernatur fuga inventore sit autem fugiat cum commodi, veritatis minima aut magnam! Beatae provident distinctio quaerat omnis minus architecto pariatur eaque animi eum, fugiat sunt dicta harum debitis eius optio magnam reiciendis similique at quae sapiente! Ipsum quasi optio, doloremque incidunt laborum sint expedita adipisci! Placeat possimus quo, eos illo corrupti numquam, laudantium provident ipsam inventore obcaecati ut sint voluptate adipisci! Temporibus explicabo perspiciatis rerum beatae error impedit! Itaque dicta ipsa, architecto porro quod omnis quaerat rerum quos ad inventore consequatur debitis nesciunt quam veniam sequi tempore explicabo voluptas.ipsum dolor sit amet consectetur adipisicing elit. Quis tempore, impedit corrupti iusto illum dolorem voluptates maxime, laboriosam officia accusantium nesciunt culpa recusandae! Libero dolorem eligendi fuga, ipsum quod ex dolor error praesentium consequuntur. Consectetur nobis molestiae totam, dolore et quam necessitatibus, praesentium aperiam vitae amet, quo dicta in sequi. Veniam assumenda magnam ipsa vero velit numquam! Quidem officiis tempore ipsa numquam harum quod molestiae facere obcaecati. Non nesciunt modi alias quidem iste, at sit quod est porro iure reprehenderit eius aspernatur suscipit vitae expedita voluptatum explicabo ad necessitatibus fugit fugiat dolor! Impedit labore consectetur ipsum possimus quos ipsa voluptatum voluptate, illo laboriosam similique velit rem excepturi, in accusamus beatae vitae tenetur. Illum possimus, eum eligendi nobis quisquam doloremque repudiandae earum odit rerum delectus, vero sunt, laborum harum officiis quidem ipsa et molestiae consequuntur blanditiis reprehenderit quae recusandae. Dolorem delectus debitis non illo id necessitatibus, odit dicta amet maxime exercitationem!
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - by Sigma Sir to Sigma Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color: pink;
+            --seccolor: green;
+            --box1color: rgb(212, 38, 212);
+            --box2color: cyan;
+            --footercolor: burlywood;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+            width: 100%;
+            margin: 0;
+            padding: 12px 0px;
+            background-color: var(--color);
+
+        }
+
+        .text {
+            border: 2px solid burlywood;
+            height: 130px;
+            border-radius: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 12px;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            background-color: var(--seccolor);
+            margin: 12px 34px;
+            height: auto;
+            padding: 0 65px;
+            text-align: center;
+        }
+
+        .box1 {
+
+            background-color: var(--box1color);
+            width: 45%;
+            height: 70vh;
+            display: inline-block;
+            margin: 23px;
+
+
+
+        }
+
+        .box2 {
+            background-color: var(--box2color);
+            width: 45%;
+            height: 70vh;
+            display: inline-block;
+            margin: 23px;
+
+        }
+
+        .logo {
+            position: fixed;
+            right: 0px;
+            bottom: 40px;
+            height: 100px;
+            border-radius: 50px;
+
+        }
+
+        .footer {
+            padding: 12px 0px;
+            margin-top: 78px;
+            background-color: var(--footercolor);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav"></nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+
+        </div>
+
+        <div class="text">
+            Welcome to this Sigma Web Development Express
+        </div>
+
+
+        <figure>
+            <img class="logo" src="logo.png" alt="logo">
+        </figure>
+
+
+    </main>
+    <footer class="footer"></footer>
+
+
+
+
+</body>
+
+</html>
