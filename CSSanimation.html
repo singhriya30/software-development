@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation - CSS</title>
+    <style>
+.container{
+    background-color: aquamarine;
+    height: 80vh;
+    width: 30vw;
+
+}
+
+.box{
+    height: 34px;
+    width: 45px;
+    /* animation: riyakaanimation;
+
+    animation-duration: 3s;
+
+    animation-iteration-count: 3; 
+      kitne baar animation chalega ye decide krta hai
+
+    animation-timing-function: ease-out;
+
+    animation-delay: 2s;  
+      ye decide krta kitne der pe animation start hoga
+
+
+    animation-direction: alternate-reverse;
+
+    animation-play-state:paused ; */
+
+    animation: riyakaanimation 3s ease-out 3s 2 reverse, riyakaanimation2 2s ease-out 3s 2 reverse ;   /*sbko sth me use krne ke liye*/
+}
+ @keyframes riyakaanimation {
+from{
+    background-color: blueviolet;
+
+}
+to{
+    background-color: blanchedalmond;
+    transform: translateX(100px);
+}
+    
+ }
+
+ @keyframes riyakaanimation2{
+    0%{
+        transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(200deg);
+    }
+    50%{
+        transform: rotate(220deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(310deg);
+    }
+ }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+</body>
+</html>
