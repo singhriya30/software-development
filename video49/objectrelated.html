@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-position - CSS</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid rgb(94, 61, 66);
+            /* background-color: pink; */
+            background-position: center center;
+            background-image: url(https://www.parentmap.com/images/article/9308/gates-fdn-girl-coding-istock.jpg);
+            
+           
+        }
+
+        img{
+            width:  466px;
+            height: 488px;
+            
+            object-fit: contain;  /* ye krne se pura image bina kate hue container me fit to ho jaa rha lekin thoda space bach jaa rha container ka*/
+            
+            object-fit: cover; /* to ye jo iss image class ke andr width or height likhe hai usko cover krega.. ye krne pe image thoda cut ke fit ho jaa rha tha */
+
+            object-position: top right;   /*mtlb jidhr katna hai kat do picture ko full container me adjust krne ke liye lekin top right rhhe do*/
+
+            /* object-fit: fill; */
+
+
+            
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+     <!-- <img class="image" src="https://www.parentmap.com/images/article/9308/gates-fdn-girl-coding-istock.jpg"> -->
+    </div>
+
+</body>
+
+</html>
